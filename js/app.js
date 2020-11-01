@@ -81,7 +81,7 @@ function AgregarPokemonRandom(pokemonId){
     .then((data) => {
         const {name, sprites: {front_default}} = data;
         containerList.innerHTML += `
-            <div class="pokemon">
+            <div class="pokemon" title='Haga click para hacer zoom'>
                 <img src="${front_default}">
                 <p>${name.toUpperCase()}</p>
             </div>`;        
