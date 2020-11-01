@@ -1,0 +1,164 @@
+*, *:*{
+    font-family: 'Tahoma';
+    font-size: 16px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 942px;
+    margin: auto;
+}
+
+.container {
+    margin: 5px;
+    border: 2px solid rgb(54, 125, 233);
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container > input, button {
+    margin: 5px;
+    padding: 5px ;
+    border: 2px solid  rgb(54, 125, 233);
+}
+
+.container > button {
+    min-width: 100px;
+    background: rgb(54, 125, 233);
+    color: white;
+}
+
+.container > input:focus, input:hover, button:hover {
+    box-shadow: 0px 0px 4px 3px rgb(147, 190, 255);
+}
+.container > button:hover {
+    
+    background: white;
+    color: rgb(54, 125, 233);
+    cursor: pointer;
+}
+
+.pokemon {
+    margin: 10px;
+    border: 1px solid silver;
+    text-align: center;
+    padding: 5px;
+    height: 200px;
+    width: 150px;
+}
+.pokemon > img {
+    width: 100%;
+}
+
+.pokemon:hover, .pokemon-active{
+    box-shadow: 0px 0px 4px 2px rgb(54, 125, 233);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
+  }
+
+  /* Modal Content */
+  .pokemon-lg {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    text-align: center;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 300px;
+    height: 400px;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+  }
+  .pokemon-lg > img {
+      width: 100%;
+  }
+  .pokemon-lg > p {
+      font-size: 30px;
+  }
+  
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {
+      top: -300px;
+      opacity: 0;
+    }
+    to {
+      top: 0;
+      opacity: 1;
+    }
+  }
+  
+  @keyframes animatetop {
+    from {
+      top: -300px;
+      opacity: 0;
+    }
+    to {
+      top: 0;
+      opacity: 1;
+    }
+  }
+  
+  /* The Close Button */
+  .modal-close {
+    color: grey;
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    user-select: none;
+  }
+
+  
+  
+  /* The Close Button */
+  .modal-prev {
+    color: grey;
+    position: absolute;
+    top: 186px;
+    left: 5px;
+    font-size: 28px;
+    font-weight: bold;
+    user-select: none;
+  }
+
+  
+  
+  /* The Close Button */
+  .modal-next {
+    color: grey;
+    position: absolute;
+    top: 186px;
+    right: 5px;
+    font-size: 28px;
+    font-weight: bold;
+    user-select: none;
+  }
+  
+  .modal-close:hover, .modal-close:focus,
+  .modal-prev:hover, .modal-prev:focus,
+  .modal-next:hover, .modal-next:focus  {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
