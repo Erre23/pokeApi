@@ -46,9 +46,9 @@ function pokemonZoom_Mostrar() {
     pokemonZoom.style.display = "block";
     let pokemon_lg = pokemonZoom.querySelector('.pokemon-lg');
     pokemon_lg.innerHTML = currentPokemon.innerHTML;
-    pokemon_lg.innerHTML += '<span class="modal-close">&times;</span>';
-    pokemon_lg.innerHTML += '<span class="modal-prev"><</span>';
-    pokemon_lg.innerHTML += '<span class="modal-next">></span>';
+    pokemon_lg.innerHTML += '<span class="modal-close" title="cerrar">&times;</span>';
+    pokemon_lg.innerHTML += '<span class="modal-prev" title="anterior"><</span>';
+    pokemon_lg.innerHTML += '<span class="modal-next" title="siguiente">></span>';
 }
 
 function buscar_click(e) {

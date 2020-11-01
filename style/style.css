@@ -1,4 +1,4 @@
-*, *:*{
+* {
     font-family: 'Tahoma';
     font-size: 16px;
     margin: 0;
@@ -6,8 +6,15 @@
 }
 
 body {
-    max-width: 942px;
+    max-width: 884px;
     margin: auto;
+}
+
+h1 {
+    color:  rgb(54, 125, 233);
+    text-align: center;
+    font-size: 40px;
+    font-weight: normal;
 }
 
 .container {
@@ -123,7 +130,7 @@ body {
     color: grey;
     position: absolute;
     top: 0px;
-    right: 10px;
+    right: 5px;
     font-size: 28px;
     font-weight: bold;
     user-select: none;
